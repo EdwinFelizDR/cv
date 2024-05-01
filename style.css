@@ -23,12 +23,15 @@ body {
    font-weight: 700;
    font-size: 20px;
    text-transform: uppercase;
+   margin-bottom: 5px;
+   padding-left: 5px;
  }
  
  /*Setting the subtibles (level 2) */
  .t2 {
    font-weight: 500;
    font-size: 16px;
+   padding-left: 5px;
  }
 
  .cv{
@@ -36,7 +39,6 @@ body {
    width: 800px;
    height: auto;
    margin: 50px auto;
-   background-color: red;
    padding: 5px;
    border-radius: 10px;
  }
@@ -46,20 +48,184 @@ body {
    background: #0bb5f4;
    display: flex;
    flex-direction: column;
+   margin: 0px;
 }
 
-.cv-right{
-   width: 550px;
-   background-color: green;
-   display: flex;
-}
-
- /* Defining the container for picture profile*/
+/* Defining the container for picture profile*/
  .profile-pic{
    width: auto;
+   margin: 0px;
 }
 
+/* Defining properties to profile picture */
 .profile-pic img {
    width: 100%;
-   height: 90%;
+   height: 100%;
+ }
+
+.cv-left-info1{
+   margin-bottom: 3px;
+}
+
+.icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 35px;
+   height: 35px;
+   background: #fff;
+   color: #0bb5f4;
+   border-radius: 50%;
+   margin-right: 15px;
+   font-size: 16px;
+ }
+
+.cv-left-info2{
+   display: flex;
+   border-bottom: 3px solid #fff;
+   margin: 10px 10px 0px 10px;
+   padding-bottom: 10px;
+}
+
+.cv-left-info2 li{
+   display: flex;
+   margin-bottom: 10px;
+   align-items: center;
+}
+
+.cv-tech-skills{
+   margin-top: 10px;
+   align-items: center;
+   border-bottom: 3px solid #fff;
+   margin: 15px 10px 0px 10px;
+   padding-bottom: 10px;
+}
+
+.cv-tech-skills .cv-skill-name{
+   width: 30%;
+}
+
+.cv-tech-skills .skill-progress{
+   width: 60%;
+   margin: 0 5px;
+   height: 5px;
+   background: #009fd9;
+   position: relative;
+}
+
+.cv-left .cv-tech-skills ul li {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 10px
+}
+
+.cv-tech-skills .skill-progress span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #fff;
+}
+
+.cv-lang{
+   margin-top: 10px;
+   align-items: center;
+   border-bottom: 3px solid #fff;
+   margin: 15px 10px 0px 10px;
+   padding-bottom: 10px;
+}
+
+.cv-lang .lang-dot{
+   width: 70%;
+   padding: 0;
+   margin-left: 10px;
+}
+
+.dot-sp {
+   height: 15px;
+   width: 15px;
+   background-color:#FFCA33;
+   border-radius: 50%;
+   display: inline-block;
+ }
+
+ .dot-en {
+   height: 15px;
+   width: 15px;
+   background-color:#33FFD1;
+   border-radius: 50%;
+   display: inline-block;
+ }
+
+ .cv-lang ul li{
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 5px
+ }
+
+ .cv-lang span{
+   margin-top: 3px;
+   margin-left: 12px;
+ }
+
+
+ .cv-social{
+   margin-top: 10px;
+   align-items: center;
+   border-bottom: 3px solid #fff;
+   margin: 15px 10px 0px 10px;
+   padding-bottom: 10px;
+}
+
+ .cv-social ul li{
+   margin-top: 15px;
+   margin-left: 10px;
+   display: flex;
+   align-items: center;
+}
+
+.cv .cv-right{
+   width: 550px;
+   background-color: whitesmoke;
+   padding-top: 25px;
+   color: #70747e;
+}
+
+.cv .cv-right .cv-right-item {
+   border-bottom: 4px solid #b1eaff;
+   margin: 15px 10px 0px 10px;
+   padding-bottom: 10px;
+}
+
+.date{
+   font-size: 16px;
+   font-weight: 500;
+   padding-left: 5px;
+}
+
+.cv .cv-right-item .title{
+   color: #0bb5f4;
+}
+
+/* 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+
+ .cv .cv-right img {
+   width: 50px;
+   height: 50px;
+ }
+
+ .cv .cv-right .justify{
+   margin: 5px 10px 20px 5px;
+   text-align: justify;
+ }
+
+ .cv .cv-right .cv-right-hobby ul {
+   display: flex;
+   justify-content: space-between;
+   text-align:center;
  }
